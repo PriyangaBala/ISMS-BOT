@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  isms_qms_assistant:
+    build: .
+    ports:
+      - "5125:5000"
+    volumes:
+      - .:/app
+    environment:
+      - FLASK_ENV=development
+    # Professional ISMS & QMS Query Assistant
